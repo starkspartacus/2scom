@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Monitor, Smartphone, Video, Printer, Calendar, Network } from "lucide-react";
+import {
+  ArrowRight,
+  Monitor,
+  Smartphone,
+  Video,
+  Printer,
+  Calendar,
+  Network,
+} from "lucide-react";
 import Link from "next/link";
 import {
   Carousel,
@@ -15,18 +23,20 @@ export default function Home() {
     {
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
       title: "Solutions Digitales Innovantes",
-      description: "Transformez votre présence numérique avec nos services experts"
+      description:
+        "Transformez votre présence numérique avec nos services experts",
     },
     {
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
       title: "Développement Web Professionnel",
-      description: "Des sites web modernes et performants pour votre entreprise"
+      description:
+        "Des sites web modernes et performants pour votre entreprise",
     },
     {
       image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d",
       title: "Production Audiovisuelle",
-      description: "Donnez vie à vos idées avec nos services de production"
-    }
+      description: "Donnez vie à vos idées avec nos services de production",
+    },
   ];
 
   return (
@@ -38,20 +48,24 @@ export default function Home() {
             {carouselItems.map((item, index) => (
               <CarouselItem key={index}>
                 <div className="relative h-[600px] w-full">
-                  <div 
+                  <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ 
+                    style={{
                       backgroundImage: `url(${item.image})`,
-                      backgroundPosition: 'center',
-                      backgroundSize: 'cover'
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
                     }}
                   >
                     <div className="absolute inset-0 bg-black/50" />
                   </div>
                   <div className="relative h-full flex items-center justify-center text-center">
                     <div className="max-w-3xl mx-auto px-4">
-                      <h2 className="text-4xl sm:text-6xl font-bold text-white mb-6">{item.title}</h2>
-                      <p className="text-xl text-white/90 mb-8">{item.description}</p>
+                      <h2 className="text-4xl sm:text-6xl font-bold text-white mb-6">
+                        {item.title}
+                      </h2>
+                      <p className="text-xl text-white/90 mb-8">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -111,7 +125,9 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="py-24">
         <div className="container px-4 mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-16">Ce que disent nos clients</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">
+            Ce que disent nos clients
+          </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <TestimonialCard
               quote="Travailler avec cette équipe a transformé notre présence en ligne. Leur expertise en gestion des réseaux sociaux est incomparable."
@@ -133,13 +149,16 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary text-primary-foreground">
+      <section className="py-24 bg-secondary text-white">
         <div className="container px-4 mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Prêt à transformer votre entreprise ?</h2>
+          <h2 className="text-3xl font-bold mb-6">
+            Prêt à transformer votre entreprise ?
+          </h2>
           <p className="max-w-2xl mx-auto mb-10 text-lg opacity-90">
-            Discutons de la façon dont nos services peuvent vous aider à atteindre vos objectifs.
+            Discutons de la façon dont nos services peuvent vous aider à
+            atteindre vos objectifs.
           </p>
-          <Button size="lg" variant="secondary" asChild>
+          <Button size="lg" variant="black" className="text-white" asChild>
             <Link href="/contact">Contactez-nous</Link>
           </Button>
         </div>
@@ -148,7 +167,12 @@ export default function Home() {
   );
 }
 
-function ServiceCard({ icon, title, description, href }: {
+function ServiceCard({
+  icon,
+  title,
+  description,
+  href,
+}: {
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -169,7 +193,11 @@ function ServiceCard({ icon, title, description, href }: {
   );
 }
 
-function TestimonialCard({ quote, author, company }: {
+function TestimonialCard({
+  quote,
+  author,
+  company,
+}: {
   quote: string;
   author: string;
   company: string;

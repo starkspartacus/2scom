@@ -38,8 +38,8 @@ export function Footer() {
               </Link>
               <Link href="/services/web-development">Développement Web</Link>
               <Link href="/services/audiovisual">Production Audiovisuelle</Link>
-              <Link href="/services/print">Services d'Impression</Link>
-              <Link href="/services/events">Gestion d'Événements</Link>
+              <Link href="/services/print">Services d&apos;Impression</Link>
+              <Link href="/services/events">Gestion d&apos;Événements</Link>
               <Link href="/services/network">Solutions Réseau</Link>
             </div>
           </div>
@@ -51,7 +51,7 @@ export function Footer() {
               <Link href="/portfolio">Portfolio</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/privacy">Politique de confidentialité</Link>
-              <Link href="/terms">Conditions d'utilisation</Link>
+              <Link href="/terms">Conditions d&apos;utilisation</Link>
             </div>
           </div>
 

@@ -62,6 +62,7 @@ export function Navigation() {
                 alt="Logo"
                 width={100}
                 height={100}
+                className="ml-10"
               />
             </span>
           </Link>
