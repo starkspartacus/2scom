@@ -9,22 +9,26 @@ export default function EventsPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à la page d&apos;accueil
         </Link>
       </Button>
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Event Management</h1>
-      
+      <h1 className="text-4xl font-bold mb-6 text-primary">
+        Gestion d&apos;événements
+      </h1>
+
       <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            Comprehensive event planning and management services. From corporate events to private celebrations, we handle every detail to ensure your event's success.
+            Services de planification et de gestion d&apos;événements complètes.
+            De événements corporatifs aux fêtes privées, nous gérons tous les
+            détails pour assurer le succès de votre événement.
           </p>
           <ul className="space-y-2 mb-6">
-            <li className="flex items-center">✓ Corporate Events</li>
-            <li className="flex items-center">✓ Product Launches</li>
-            <li className="flex items-center">✓ Conferences & Seminars</li>
-            <li className="flex items-center">✓ Private Celebrations</li>
+            <li className="flex items-center">✓ Événements corporatifs</li>
+            <li className="flex items-center">✓ Lancements de produits</li>
+            <li className="flex items-center">✓ Conférences et séminaires</li>
+            <li className="flex items-center">✓ Fêtes privées</li>
           </ul>
         </div>
         <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,10 +69,14 @@ export default function EventsPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Ready to plan your next event?</h2>
-        <p className="mb-6">Let's create an unforgettable experience for your guests.</p>
+        <h2 className="text-2xl font-semibold mb-4">
+          Prêt à planifier votre prochain événement ?
+        </h2>
+        <p className="mb-6">
+          Créons une expérience inoubliable pour vos invités.
+        </p>
         <Button asChild>
-          <Link href="/contact">Start Planning</Link>
+          <Link href="/contact">Commencer à planifier</Link>
         </Button>
       </div>
     </div>

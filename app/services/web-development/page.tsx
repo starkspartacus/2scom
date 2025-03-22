@@ -9,22 +9,28 @@ export default function WebDevelopmentPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à la page d&apos;accueil
         </Link>
       </Button>
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Web Development</h1>
-      
+      <h1 className="text-4xl font-bold mb-6 text-primary">
+        Développement web
+      </h1>
+
       <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            Custom web solutions tailored to your business needs. From responsive websites to complex web applications, we deliver high-quality digital experiences.
+            Des solutions web personnalisées adaptées aux besoins de votre
+            entreprise. Des sites web réactifs aux applications web complexes,
+            nous offrons des expériences numériques de haute qualité.
           </p>
           <ul className="space-y-2 mb-6">
-            <li className="flex items-center">✓ Custom Website Development</li>
-            <li className="flex items-center">✓ E-commerce Solutions</li>
-            <li className="flex items-center">✓ Web Applications</li>
-            <li className="flex items-center">✓ CMS Integration</li>
+            <li className="flex items-center">
+              ✓ Développement de sites web personnalisés
+            </li>
+            <li className="flex items-center">✓ Solutions e-commerce</li>
+            <li className="flex items-center">✓ Applications web</li>
+            <li className="flex items-center">✓ Intégration de CMS</li>
           </ul>
         </div>
         <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,10 +71,14 @@ export default function WebDevelopmentPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Ready to build your digital presence?</h2>
-        <p className="mb-6">Let's create a website that represents your brand perfectly.</p>
+        <h2 className="text-2xl font-semibold mb-4">
+          Prêt à construire votre présence numérique ?
+        </h2>
+        <p className="mb-6">
+          Créons un site web qui représente parfaitement votre marque.
+        </p>
         <Button asChild>
-          <Link href="/contact">Start Your Project</Link>
+          <Link href="/contact">Commencer votre projet</Link>
         </Button>
       </div>
     </div>

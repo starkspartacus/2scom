@@ -9,22 +9,26 @@ export default function NetworkPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à la page d&apos;accueil
         </Link>
       </Button>
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Network Solutions</h1>
-      
+      <h1 className="text-4xl font-bold mb-6 text-primary">Solutions réseau</h1>
+
       <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            Professional network infrastructure and cabling services. We provide comprehensive networking solutions to keep your business connected and running smoothly.
+            Services de câblage et d&apos;infrastructure réseau professionnels.
+            Nous fournissons des solutions de réseau complètes pour maintenir
+            votre entreprise connectée et en bon fonctionnement.
           </p>
           <ul className="space-y-2 mb-6">
-            <li className="flex items-center">✓ Network Infrastructure Design</li>
-            <li className="flex items-center">✓ Structured Cabling</li>
-            <li className="flex items-center">✓ Network Security</li>
-            <li className="flex items-center">✓ Maintenance & Support</li>
+            <li className="flex items-center">
+              ✓ Conception de l&apos;infrastructure réseau
+            </li>
+            <li className="flex items-center">✓ Câblage structuré</li>
+            <li className="flex items-center">✓ Sécurité réseau</li>
+            <li className="flex items-center">✓ Maintenance et support</li>
           </ul>
         </div>
         <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,10 +69,14 @@ export default function NetworkPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Ready to upgrade your network?</h2>
-        <p className="mb-6">Let's build a reliable network infrastructure for your business.</p>
+        <h2 className="text-2xl font-semibold mb-4">
+          Prêt à mettre à jour votre réseau ?
+        </h2>
+        <p className="mb-6">
+          Créons une infrastructure réseau fiable pour votre entreprise.
+        </p>
         <Button asChild>
-          <Link href="/contact">Get Started</Link>
+          <Link href="/contact">Commencer</Link>
         </Button>
       </div>
     </div>

@@ -9,22 +9,28 @@ export default function PrintPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à la page d&apos;accueil
         </Link>
       </Button>
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Print Services</h1>
-      
+      <h1 className="text-4xl font-bold mb-6 text-primary">
+        Services de impression
+      </h1>
+
       <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            High-quality printing solutions for all your business needs. From business cards to large format printing, we ensure exceptional quality for every project.
+            Solutions de printage de haute qualité pour tous vos besoins
+            commerciaux. De cartes de visite aux impressions grand format, nous
+            garantissons une qualité exceptionnelle pour chaque projet.
           </p>
           <ul className="space-y-2 mb-6">
-            <li className="flex items-center">✓ Business Cards & Stationery</li>
-            <li className="flex items-center">✓ Marketing Materials</li>
-            <li className="flex items-center">✓ Large Format Printing</li>
-            <li className="flex items-center">✓ Custom Packaging</li>
+            <li className="flex items-center">
+              ✓ Cartes de visite et documents
+            </li>
+            <li className="flex items-center">✓ Matériel de marketing</li>
+            <li className="flex items-center">✓ Impression grand format</li>
+            <li className="flex items-center">✓ Emballage sur mesure</li>
           </ul>
         </div>
         <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,10 +71,14 @@ export default function PrintPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Ready to start your print project?</h2>
-        <p className="mb-6">Let's create beautiful printed materials that make an impact.</p>
+        <h2 className="text-2xl font-semibold mb-4">
+          Prêt à commencer votre projet de print ?
+        </h2>
+        <p className="mb-6">
+          Créons des matériaux imprimés beaux et efficaces qui font un impact.
+        </p>
         <Button asChild>
-          <Link href="/contact">Get Started</Link>
+          <Link href="/contact">Commencer</Link>
         </Button>
       </div>
     </div>

@@ -9,22 +9,30 @@ export default function AudiovisualPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à la page d&apos;accueil
         </Link>
       </Button>
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Audiovisual Production</h1>
-      
+      <h1 className="text-4xl font-bold mb-6 text-primary">
+        Production audiovisuelle
+      </h1>
+
       <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            Professional video and audio production services for all your content needs. From corporate videos to promotional content, we deliver high-quality productions.
+            Professional video and audio production services for all your
+            content needs. From corporate videos to promotional content, we
+            deliver high-quality productions.
           </p>
           <ul className="space-y-2 mb-6">
-            <li className="flex items-center">✓ Corporate Video Production</li>
-            <li className="flex items-center">✓ Commercial Filming</li>
-            <li className="flex items-center">✓ Event Coverage</li>
-            <li className="flex items-center">✓ Audio Recording & Editing</li>
+            <li className="flex items-center">
+              ✓ Production de vidéo corporate
+            </li>
+            <li className="flex items-center">✓ Filmage commercial</li>
+            <li className="flex items-center">✓ Couverture d&apos;événement</li>
+            <li className="flex items-center">
+              ✓ Enregistrement audio et édition
+            </li>
           </ul>
         </div>
         <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,10 +73,15 @@ export default function AudiovisualPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Ready to create compelling content?</h2>
-        <p className="mb-6">Let's bring your vision to life through professional audiovisual production.</p>
+        <h2 className="text-2xl font-semibold mb-4">
+          Prêt à créer du contenu captivant ?
+        </h2>
+        <p className="mb-6">
+          Faisons de votre vision une réalité grâce à la production
+          audiovisuelle professionnelle.
+        </p>
         <Button asChild>
-          <Link href="/contact">Start Your Project</Link>
+          <Link href="/contact">Commencer votre projet</Link>
         </Button>
       </div>
     </div>

@@ -9,22 +9,31 @@ export default function SocialMediaPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à la page d&apos;accueil
         </Link>
       </Button>
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">Social Media Management</h1>
-      
+      <h1 className="text-4xl font-bold mb-6 text-primary">
+        Gestion des médias sociaux
+      </h1>
+
       <div className="grid gap-8 md:grid-cols-2 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            Transform your social media presence with our expert management services. We help businesses build and maintain a strong online presence across all major social platforms.
+            Transformez votre présence sur les médias sociaux avec nos services
+            de gestion experts. Nous aidons les entreprises à construire et à
+            maintenir une présence en ligne forte sur tous les principaux
+            réseaux sociaux.
           </p>
           <ul className="space-y-2 mb-6">
-            <li className="flex items-center">✓ Content Strategy Development</li>
-            <li className="flex items-center">✓ Regular Post Creation & Scheduling</li>
-            <li className="flex items-center">✓ Community Management</li>
-            <li className="flex items-center">✓ Analytics & Performance Reporting</li>
+            <li className="flex items-center">✓ Stratégie de contenu</li>
+            <li className="flex items-center">
+              ✓ Création et programmation de posts réguliers
+            </li>
+            <li className="flex items-center">✓ Gestion de la communauté</li>
+            <li className="flex items-center">
+              ✓ Analyse et suivi des performances
+            </li>
           </ul>
         </div>
         <div className="relative h-[300px] rounded-lg overflow-hidden">
@@ -65,10 +74,14 @@ export default function SocialMediaPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Ready to boost your social media presence?</h2>
-        <p className="mb-6">Let's create a strategy that works for your business.</p>
+        <h2 className="text-2xl font-semibold mb-4">
+          Prêt à booster votre présence sur les médias sociaux ?
+        </h2>
+        <p className="mb-6">
+          Créons une stratégie qui fonctionne pour votre entreprise.
+        </p>
         <Button asChild>
-          <Link href="/contact">Get Started</Link>
+          <Link href="/contact">Commencer</Link>
         </Button>
       </div>
     </div>
